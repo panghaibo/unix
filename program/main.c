@@ -2,14 +2,20 @@
 //  main.c
 //  program
 //
-//  Created by ocean on 17/12/3.
-//  Copyright © 2017年 ocean. All rights reserved.
+//  Created by ocean on 18/1/17.
+//  Copyright © 2018年 ocean. All rights reserved.
 //
 
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+#include "unix.h"
+#include "network.h"
+#include "server.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(int argc, char *argv[])
+{
+    server();
     return 0;
 }
